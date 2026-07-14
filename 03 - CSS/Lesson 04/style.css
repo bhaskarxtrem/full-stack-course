@@ -9,10 +9,17 @@ h2 {
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
+    font-style: oblique;
+    
 }
 
 p {
     font-size: 30px;
     font-weight: bold;
+    font-style: italic;
+}
+
+.normal {
+    font-style: normal;
 }
 
