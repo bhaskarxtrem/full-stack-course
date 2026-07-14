@@ -26,3 +26,8 @@ p {
     font-style: normal;
 }
 
+a {
+    text-decoration: underline;
+    font-size: 40px;
+}
+
