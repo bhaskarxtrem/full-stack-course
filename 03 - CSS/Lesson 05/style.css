@@ -21,7 +21,17 @@ p {
 }
 
 .padding {
+    width: 300px;
     border: 3px solid black;
     padding: 20px 50px;
     margin: 50px;
+}
+
+.box {
+    width: 300px;
+    padding: 40px;
+    border: 10px solid red;
+    background-color: lightblue;
+
+    box-sizing: border-box;
 }
