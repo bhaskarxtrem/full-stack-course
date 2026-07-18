@@ -1,8 +1,10 @@
 .container {
     border: 3px solid red;
     display: flex;
+    height: 500px;
 
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .box {
