@@ -1,13 +1,15 @@
 .container {
     display: flex;
-    width: 500px;
-    height: 100px;
+    width: 180px;
+    height: 250px;
     border-radius: 20px;
     background-color: gray;
+    border: 3px solid red;
 
-    justify-content: center;
+    justify-content: start;
+    flex-direction: row;
     align-items: center;
-    row-gap: 20px;
+    flex-wrap: wrap;
     
 
 }
@@ -19,4 +21,6 @@
     text-align: center;
     background-color: lightblue;
     border: 2px solid black;
+
+    flex-shrink: 0;
 }
