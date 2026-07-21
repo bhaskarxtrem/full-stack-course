@@ -5,9 +5,10 @@
     border-radius: 20px;
     background-color: gray;
 
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    row-gap: 20px;
+    
 
 }
 
