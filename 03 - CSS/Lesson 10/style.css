@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    width: 300px;
+    height: 120px;
+
+    background-color: gray;
+}
+
+.box {
+    width: 200px;
+    flex-basis: 100px;
+    height: 80px;
+
+    background-color: lightblue;
+    border: 2px solid black;
+    flex-shrink: 0;
+
+
+
+}
+
+/* .box1 {
+    flex-shrink: 2;
+}
+
+.box2 {
+    flex-shrink: 1;
+}
+
+.box3 {
+    flex-grow: 1; */
