@@ -1,0 +1,12 @@
+.box {
+    width: 1000px;
+    height: 1000px;
+
+    border: 2px solid black;
+
+    background-image: url("photo.jpeg");
+    background-position: 100px 100px;
+
+    background-size: contain;
+
+}
