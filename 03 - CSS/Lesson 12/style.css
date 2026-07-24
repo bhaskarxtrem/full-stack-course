@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+
+    background-color: lightblue;
+
+    border: 2px solid black;
+
+    box-shadow: 10px 10px 10px 10px red;
+}
