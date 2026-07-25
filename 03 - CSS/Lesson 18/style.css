@@ -1,0 +1,28 @@
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.1;
+}
+
+.box1 {
+    background: red;
+    
+}
+
+.box2 {
+    background: green;
+}
+
+.box3 {
+    background: blue;
+}
