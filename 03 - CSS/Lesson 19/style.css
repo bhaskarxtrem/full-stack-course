@@ -1,5 +1,5 @@
 body{
-    margin:0;
+    margin: 0;
 }
 
 .box{
@@ -12,8 +12,58 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+
+    position:sticky;
+    top:0;
 }
 
 .content{
-    margin-top:20px;
+    padding:20px;
+}
+
+.container{
+    position:relative;
+
+    width:400px;
+    height:300px;
+
+    border:2px solid black;
+
+    margin:50px;
+}
+
+.box1{
+    width:150px;
+    height:150px;
+
+    background:red;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:absolute;
+
+    top:40px;
+    left:40px;
+    z-index: 5;
+}
+
+.box2{
+    width:150px;
+    height:150px;
+
+    background:blue;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:absolute;
+
+    top:90px;
+    left:90px;
+    z-index: 4;
 }
