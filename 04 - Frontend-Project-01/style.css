@@ -34,6 +34,7 @@ body {
     color: #e8ddc7;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .logo {
@@ -45,6 +46,57 @@ body {
 
 }
 
-.nav-links a:hover {
+.nav-links   a:hover {
     color: orange;
 }
+
+.hero {
+    min-height: 524px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+
+}
+
+.hero-content p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #a89984;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.hero-button {
+    padding: 14px 36px;
+    background-color: #a8412d;
+    color: #e8ddc7;
+    border: 2px solid orange;
+    border-radius: 3px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: orange;
+    color: #14100d;
+    transition: 0.3s;
+}
+
