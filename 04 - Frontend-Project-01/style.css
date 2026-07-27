@@ -7,11 +7,44 @@
 body {
     background-color: #14100d;
     color: #e8ddc7;
-    font-family: "poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e8ddc7;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+}
+
+.nav-links a:hover {
+    color: orange;
 }
