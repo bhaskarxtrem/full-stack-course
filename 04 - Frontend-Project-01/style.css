@@ -153,7 +153,13 @@ body {
     border-radius: 5px;
     box-shadow: 0  8px 20px 0 black;
     flex: 0 0 400px;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
 
+.about-image:hover {
+    transform: translateY(-10px);
+    border-color: yellow;
+    box-shadow: 0 14px 30px black;
 }
 
 .about-image img {
