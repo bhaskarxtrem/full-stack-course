@@ -17,6 +17,10 @@ body {
     padding: 80px 24px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*======== NAVBAR ======== */
 .navbar {
     display: flex;
@@ -42,6 +46,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: color 0.3s;
 }
 
 .logo {
@@ -50,6 +55,7 @@ body {
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 3px;
+    color: rgb(228, 228, 21);
 
 }
 
@@ -225,8 +231,9 @@ body {
 }
 
 .feature-card h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: poppins, sans-serif;
     margin-bottom: 16px;
+    color: rgb(228, 228, 21);
     
 }
 .feature-card p {
@@ -300,6 +307,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
     margin-bottom: 16px;
+    color: rgb(214, 214, 22);
 }
 
 .character-card p {
@@ -317,7 +325,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #1b100a;
-    border-bottom: 1px solid #a89984;
+    border-bottom: 4px solid rgb(187, 187, 44);
 }
 
 .gallery h2 {
@@ -356,4 +364,75 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+}
+
+/*========  FOOTER  ======== */
+
+footer {
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+footer .container {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.footer-logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: rgb(228, 228, 21);
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-nav li {
+    list-style: none;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #e8ddc7;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+.footer-nav a:hover {
+    color: rgb(228, 228, 21);
+}
+
+.footer-bottom {
+    display: flex;
+    border-top: 1px solid #a89984;
+    padding: 24px 0;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #a89984;
+    font-size: 14px;
+}
+
+.back-to-top {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(228, 228, 21);
+    transition: color 0.3s;
+}
+
+.back-to-top:hover {
+    color: red;
 }
