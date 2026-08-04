@@ -25,8 +25,13 @@ h1{
                          "sidebar article article"
                          "footer footer footer";
 
+    justify-items: start;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-auto-columns: 100px;
+    
     gap:20px;
-
+    
     padding: 20px;
 
     border:3px solid white;
@@ -40,6 +45,9 @@ h1{
 .item{
 
     display:flex;
+
+    /* width: 60px;
+    height: 60px; */
 
     justify-content:center;
 
@@ -65,6 +73,8 @@ h1{
 
 .item2 {
     grid-area: sidebar;
+    align-self: flex-start;
+    justify-self: flex-end;
 }
 
 .item3 {
