@@ -19,17 +19,19 @@ h1{
 
     display:grid;
 
-    grid-template-columns: repeat(auto-fill, minmax (250px, 1fr));
-    grid-template-rows: 80px 200px 60px;
+    /* grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); */
+    /* grid-template-rows: 80px 200px 60px; */
     /* grid-template-areas: "nav nav nav"
                          "sidebar article article"
                          "footer footer footer"; */
 
     /* justify-items: start;
     align-items: center; */
-    grid-auto-flow: column;
-    grid-auto-columns: 100px;
-    
+    grid-auto-flow: row;
+    grid-auto-rows: 100px;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center start;
     gap:20px; 
     
     padding: 20px;
@@ -67,6 +69,10 @@ h1{
 
 }
 
+/* .item1{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+} */
 /* .item1 {
     grid-area: nav;
 }
@@ -74,8 +80,8 @@ h1{
 .item2 {
     grid-area: sidebar;
     /* align-self: flex-start;
-    justify-self: flex-end; */
-} */
+    justify-self: flex-end; 
+}*/
 
 /* .item3 {
     grid-area: article;
