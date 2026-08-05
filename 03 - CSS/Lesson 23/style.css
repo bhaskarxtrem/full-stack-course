@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #e8ddc7;
+    background-color: #14100d;
+}
+
+header {
+    background-color: #1d1010;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid orange;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: 'Georgia', serif;
+    color: #e8ddc7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.gallery-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 64px;
+}
+
+.gallery-cards {
+    max-width: 1100px;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 280px));
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-card {
+    background-color: #392020;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 20px black;
+    border: 1px solid transparent;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px black;
+    border: 1px solid orange;
+}
+
+.gallery-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: rgb(224, 224, 15);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.gallery-card p {
+    font-size: 16px;
+    color: #e8ddc7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.gallery-image {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #e8ddc7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
