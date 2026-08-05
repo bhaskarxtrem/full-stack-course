@@ -31,7 +31,7 @@ h1{
     grid-auto-rows: 100px;
     /* justify-items: center;
     align-items: center; */
-    place-items: center start;
+    place-items: center center;
     gap:20px; 
     
     padding: 20px;
