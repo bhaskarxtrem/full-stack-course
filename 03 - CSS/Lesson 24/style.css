@@ -45,7 +45,7 @@ nav a{
 
 .hero{
 
-    width:90%;
+    width:80vw;
     margin:60px auto;
 
     display:grid;
@@ -61,16 +61,20 @@ nav a{
     width:100%;
 }
 
+.hero-text {
+    font-size: 20px;
+}
+
 .hero h1{
 
-    font-size:48px;
+    font-size: 3em;
     margin-bottom:20px;
     color: white;
 }
 
 .hero p{
 
-    font-size:18px;
+    font-size:1.5em;
     line-height:1.7;
     margin-bottom:30px;
     color: white;
@@ -79,6 +83,7 @@ nav a{
 button{
 
     padding:15px 30px;
+    font-size: 1.5rem;
 
     border:none;
 
