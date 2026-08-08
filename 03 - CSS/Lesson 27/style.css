@@ -1,134 +1,187 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#211313;
-    color:white;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #211313;
+    color: white;
 }
 
 
 /* Navbar */
 
-.navbar{
-    width:90%;
-    max-width:1200px;
+.navbar {
+    width: 90%;
+    max-width: 1200px;
 
-    margin:auto;
-    padding:1.5rem 0;
+    margin: auto;
+    padding: 1.5rem 0;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid rgb(227, 220, 220);
 }
 
-.logo{
-    font-size:1.5rem;
-    font-weight:bold;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-nav{
-    display:flex;
-    gap:2rem;
+nav {
+    display: flex;
+    gap: 2rem;
 }
 
-nav a{
-    color:rgb(238, 232, 232);
-    text-decoration:none;
+nav a {
+    color: rgb(238, 232, 232);
+    text-decoration: none;
 }
 
 
 /* Hero */
 
-.hero{
-    width:90%;
-    max-width:1200px;
+.hero {
+    width: 90%;
+    max-width: 1200px;
 
-    margin:4rem auto;
+    margin: 4rem auto;
 
-    display:grid;
-    grid-template-columns:1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    gap:3rem;
+    gap: 3rem;
 
-    align-items:center;
+    align-items: center;
 }
 
-.hero-content h1{
-    font-size:3rem;
-    margin-bottom:1.5rem;
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
-.hero-content p{
-    font-size:1.125rem;
-    line-height:1.7;
+.hero-content p {
+    font-size: 1.125rem;
+    line-height: 1.7;
 
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
 }
 
-.hero-content button{
-    padding:1rem 2rem;
+.hero-content button {
+    padding: 1rem 2rem;
 
-    border:none;
+    border: none;
 
-    background:#0066ff;
-    color:white;
+    background: #0066ff;
+    color: white;
 
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.hero-image img{
-    width:100%;
-    height:auto;
+.hero-image img {
+    width: 100%;
+    height: auto;
 }
 
 
 /* Features */
 
-.features{
-    width:90%;
-    max-width:1200px;
+.features {
+    width: 90%;
+    max-width: 1200px;
 
-    margin:4rem auto;
+    margin: 4rem auto;
 
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-    gap:2rem;
+    gap: 2rem;
 }
 
-.card{
-    padding:2rem;
+.card {
+    padding: 2rem;
 
-    background:rgb(232, 226, 226);
+    background: rgb(232, 226, 226);
 
-    border-radius:10px;
+    border-radius: 10px;
 }
 
-.card h2{
-    margin-bottom:1rem;
-    color:#1e0f0f;
+.card h2 {
+    margin-bottom: 1rem;
+    color: #1e0f0f;
 }
 
-.card p{
-    line-height:1.6;
-    color:#1e0f0f;
+.card p {
+    line-height: 1.6;
+    color: #1e0f0f;
 }
 
-@media (max-width: 700px){
-    .hero{
-        grid-template-columns:1fr;
+@media (max-width: 700px) {
+    .hero {
+        grid-template-columns: 1fr;
     }
 
-    .hero-content{
-        text-align:center;
+    .hero-content {
+        text-align: center;
     }
 
-    .features{
-        grid-template-columns:1fr;
+    .features {
+        grid-template-columns: 1fr;
     }
+
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .hero {
+        grid-template-columns: 2fr 1fr;
+    }
+
+}
+
+@media (min-width: 701px) and (max-width: 999px) {
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+}
+
+@media (orientation: portrait) {
+
+    .navbar {
+        border-bottom: 2px solid #0066ff;
+    }
+
+}
+
+@media (orientation: landscape) {
+
+    .navbar {
+        border-bottom: 2px solid #ff6600;
+    }
+
 }
