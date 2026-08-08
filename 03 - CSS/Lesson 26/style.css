@@ -29,6 +29,11 @@ body{
     padding:40px;
 
     border-radius:12px;
+    transition:transform 0.3s;
+}
+
+.hero:hover{
+    transform: translateY(-10px);
 }
 
 .hero-content h1{
@@ -62,4 +67,5 @@ body{
     width:100%;
     height:auto;
     max-width:500px;
+    border-radius:12px;
 }
