@@ -163,17 +163,37 @@ nav a {
         justify-content: space-between;
         align-items: center;
     }
+    .logo {
+        font-size: 2rem;
+    }
 
     nav {
         flex-direction: row;
     }
 
+    nav a {
+        font-size: 1.1rem;
+    }
+
     .hero {
         grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
 
     .hero-content {
         text-align: left;
+        
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-content button {
+        font-size: 1.1rem;
     }
 
     .features {
