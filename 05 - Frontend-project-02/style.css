@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #0d1117;
@@ -15,7 +19,6 @@ body {
     max-width: 90%;
     margin: 0 auto;
     padding: 0 1rem;
-    margin: 0 auto;
 }
 
 .navbar {
@@ -88,13 +91,11 @@ body {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     background: linear-gradient(90deg, #c0bff0, #00c9ff);
-    ;
     color: #0b0f1a;
     border: none;
     border-radius: 24px;
     cursor: pointer;
     box-shadow: 0 0 25px rgba(108, 99, 255, 0.5);
-    ;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -120,11 +121,12 @@ body {
 .category-cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.3rem;
 }
 
 .category-card {
-    max-width: 300px;
+    width: 100%;
+    max-width: 350px;
     background: #171c25;
     ;
     border-radius: 16px;
@@ -205,6 +207,7 @@ body {
 }
 
 .product-card {
+    width: 100%;
     max-width: 300px;
     background: #171c25;
     ;
@@ -220,6 +223,8 @@ body {
 .product-card h3 {
     font-size: 1rem;
     font-weight: 700;
+    justify-self: start;
+    letter-spacing: 1px;
     margin-bottom: 5px;
     color: #f3eded;
 }
@@ -227,20 +232,162 @@ body {
 .product-card p {
     font-size: 1rem;
     color: #e4c704;
+    justify-self: start;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .product-card button {
-    padding: 0.75rem 1.5rem;
+    width: 100%;
+    padding: 0.50rem 1.5rem;
     font-size: 1rem;
+    font-weight: 600;
     background: linear-gradient(90deg, #c0bff0, #00a6ff);
-    ;
     color: #0b0f1a;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 0 25px rgba(108, 99, 255, 0.5);
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
     ;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+}
+
+.product-card button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgb(201, 5, 5);
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #282d37;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ====== Special Offers Section ====== */
+
+.special-offers {
+    padding: 4rem 0;
+    background: #111720;
+}
+
+.special-offers h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #f3eded;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.offer-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.offer-card {
+    width: 100%;
+    background: linear-gradient(
+        135deg,
+        #1d2633,
+        #141a23
+    );
+
+    border: 1px solid #ff5100;
+    border-radius: 20px;
+
+    padding: 1.2rem;
+
+    box-shadow: 0 8px 30px rgba(255, 0, 0, 0.15);
+
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(255, 64, 0, 0.25);
+}
+
+.offer-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    background-color: #282d37;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    margin-bottom: 1.2rem;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+.offer-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    margin-bottom: 0.5rem;
+}
+
+.offer-card p {
+    font-size: 0.9rem;
+
+    color: #bac1d7;
+
+    margin-bottom: 1.2rem;
+}
+
+/* Offer Button */
+
+.offer-card a {
+    display: inline-block;
+
+    padding: 0.7rem 1.5rem;
+
+    background: linear-gradient(
+        90deg,
+        #f49302,
+        #ff1100
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    border-radius: 8px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.offer-card a:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 20px rgba(0, 201, 255, 0.5);
 }
