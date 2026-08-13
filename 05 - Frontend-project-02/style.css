@@ -391,3 +391,87 @@ body {
 
     box-shadow: 0 0 20px rgba(0, 201, 255, 0.5);
 }
+
+
+.review-section {
+    padding: 4rem 0;
+
+    background: #0d1117;
+
+    border-top: 1px solid #252d39;
+}
+
+.review-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    margin-bottom: 2rem;
+
+    color: #f3eded;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.review-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.review-card {
+    width: 100%;
+
+    padding: 1.5rem;
+
+    background: #171c25;
+
+    border-left: 4px solid #00c9ff;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 30px rgba(0, 201, 255, 0.15);
+}
+
+.review-stars {
+    font-size: 1.1rem;
+
+    color: #e4c704;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 1rem;
+}
+
+.review-card p {
+    font-size: 0.95rem;
+
+    color: #bac1d7;
+
+    margin-bottom: 1.2rem;
+
+    line-height: 1.7;
+}
+
+.review-card h4 {
+    font-size: 1rem;
+
+    color: #ffffff;
+
+    margin-bottom: 0.2rem;
+}
+
+.review-card span {
+    font-size: 0.75rem;
+
+    color: #7f8ba3;
+}
+
