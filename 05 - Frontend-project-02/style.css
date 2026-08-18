@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -187,6 +187,11 @@ body {
     border-radius: 8px;
 }
 
+.featured-products .container {
+    max-width: 100%;
+    padding: 0;
+}
+
 .featured-products {
     padding: 4rem 0;
 }
@@ -202,6 +207,13 @@ body {
 
 .product-cards {
     display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+.product-row {
+    display: flex;
     gap: 1.5rem;
     overflow-x: auto;
     scrollbar-width: none;
@@ -209,7 +221,7 @@ body {
 }
 
 .product-card {
-    flex: 0 0 160px;
+    flex: 0 0 200px;
     background: #171c25;
     border-radius: 16px;
     border: 1px solid #2c71e7;
@@ -554,4 +566,51 @@ body {
     font-size: 0.75rem;
 
     color: #687386;
+}
+
+/* ============================= */
+/* ===== Tablet: 650px+ ======== */
+/* ============================= */
+
+@media (min-width: 650px) {
+
+    .nav-links a {
+        display: block;
+        font-size: 1rem;
+        gap: 1rem   ;
+    }
+
+    .nav-links {
+        gap: 1rem;  
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .hero-content {
+        max-width: 70%;
+    }
+
+    .category-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+        flex: 0 0 264px;
+    }
+
+    .offer-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .review-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
