@@ -209,7 +209,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    
+
 }
 
 .product-row {
@@ -308,11 +308,9 @@ body {
 
 .offer-card {
     width: 100%;
-    background: linear-gradient(
-        135deg,
-        #1d2633,
-        #141a23
-    );
+    background: linear-gradient(135deg,
+            #1d2633,
+            #141a23);
 
     border: 1px solid #ff5100;
     border-radius: 20px;
@@ -324,7 +322,7 @@ body {
     text-align: center;
 
     transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+        box-shadow 0.3s ease;
 }
 
 .offer-card:hover {
@@ -378,11 +376,9 @@ body {
 
     padding: 0.7rem 1.5rem;
 
-    background: linear-gradient(
-        90deg,
-        #f49302,
-        #ff1100
-    );
+    background: linear-gradient(90deg,
+            #f49302,
+            #ff1100);
 
     color: white;
 
@@ -394,7 +390,7 @@ body {
     border-radius: 8px;
 
     transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+        box-shadow 0.3s ease;
 }
 
 .offer-card a:hover {
@@ -443,7 +439,7 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 
     transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+        box-shadow 0.3s ease;
 }
 
 .review-card:hover {
@@ -577,11 +573,11 @@ body {
     .nav-links a {
         display: block;
         font-size: 1rem;
-        gap: 1rem   ;
+        gap: 1rem;
     }
 
     .nav-links {
-        gap: 1rem;  
+        gap: 1rem;
     }
 
     .logo {
@@ -590,7 +586,7 @@ body {
     }
 
     .hero-content {
-        max-width: 70%;
+        max-width: 70vh;
     }
 
     .category-cards {
@@ -599,6 +595,10 @@ body {
 
     .product-card {
         flex: 0 0 264px;
+    }
+
+    .product-row{
+        justify-content: center;
     }
 
     .offer-cards {
@@ -612,5 +612,36 @@ body {
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+/* ============================= */
+/* ===== Laptop: 1024px+ ======== */
+/* ============================= */
+
+@media (min-width: 1024px) {
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .nav-links a {
+        font-size: 1.05rem;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+    }
+
+    .hero-content {
+        max-width: 70vw;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
     }
 }
