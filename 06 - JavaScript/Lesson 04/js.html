@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lesson 4</h1>
+
+    <script>
+        let city = "Delhi";
+        let country = "India";
+        console.log(`I live in ${city}, ${country}`)
+
+        let price = 300;
+        console.log(`Price after adding GST: ${price * 1.18}`)
+
+        let fruit = "apple";
+
+        switch (fruit) {
+            case "banana":
+                console.log("Yellow");
+                break;
+            case "apple":
+                console.log("Red");
+                break;
+            case "grape":
+                console.log("Purple");
+                break;
+            default:
+                console.log("Unknown fruit");
+        }
+
+        let temperature = 25;
+
+        if(temperature > 30) {
+            console.log("It's hot")
+        }
+        else {
+            console.log("It's cool")
+        }
+
+        let marks = 17;
+
+        if(marks >=90) {
+            console.log("Grade A")            
+        }
+        else if(marks >=75) {
+            console.log("Grade B")
+        }
+        else if(marks >=50) {
+            console.log("Grade C")
+        }
+        else {
+            console.log("Grade D")
+        }
+
+        let age = 17;
+        let ticket = true;
+
+        if (age >= 18 && ticket === true) {
+            console.log("Allowed to enter")
+        }
+        else {
+            console.log("Not allowed")
+        }
+
+        let username = "";
+        if (username) {
+            console.log(`Welcome, ${username}`)
+        }
+        else {
+            console.log("Please enter a username")
+        }
+    </script>
+
+</body>
+
+</html>
