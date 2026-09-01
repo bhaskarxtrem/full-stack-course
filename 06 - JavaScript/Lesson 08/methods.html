@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let prices = [10, 20, 30, 40, 50]
+
+        let newPrices = prices.map((value, index, prices) => {
+            return value * 2
+        })
+        console.log(newPrices)
+
+        console.log("-------------------------------")
+
+        console.log(prices.filter((element) => {
+            if (element > 20) {
+                return true
+            }
+            return false
+        }))
+
+        console.log("--------------------------------")
+
+        let num = [3,4,55,4,36,77,43,3]
+
+        const add = (a,b) => {
+            return a + b;
+        };
+
+        console.log(num.reduce(add))
+
+        const name = Array.from("Apple")
+
+        console.log(name)
+
+        console.log("-------------------------------")
+
+        let names = ["xtrem", "yusuf", "manish"]
+
+        console.log(names.find((element) => {
+            if (element === "yusuf") {
+                return true
+            }
+            return false
+        }))
+
+        
+
+    </script>
+</body>
+</html>
