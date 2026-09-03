@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring in JavaScript</title>
+</head>
+
+<body>
+    <script>
+        const phone = {
+            brand: "Samsung",
+            model: "S25",
+            price: 80000
+        };
+
+        const { brand: phoneBrand, model: phoneModel, price: phonePrice } = phone;
+        console.log(phoneBrand);
+        console.log(phoneModel);
+        console.log(phonePrice);
+
+        console.log("---------------------------------------");
+
+        const colors = ["Red", "Green", "Blue"];
+
+        const [firstColor, secondColor, thirdColor] = colors;
+
+        console.log(firstColor);
+        console.log(secondColor);
+        console.log(thirdColor);
+
+        const [first, , third] = colors;
+        console.log(first);
+        console.log(third);
+    </script>
+</body>
+
+</html>
