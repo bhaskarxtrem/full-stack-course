@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread & Rest operator</title>
+</head>
+
+<body>
+    <script>
+        const fruits1 = ["Apple", "Banana"];
+        const fruits2 = ["Mango", "Orange"];
+
+        const allFruits = [...fruits1, ...fruits2];
+        console.log(allFruits);
+
+        console.log("---------------------------------------");
+        const phone = {
+            brand: "Samsung",
+            model: "S25",
+            price: 80000
+        };
+
+        const newPhone = {
+            ...phone,
+            color: "Black"
+        };
+        console.log(newPhone);
+
+        console.log("---------------------------------------");
+        const numbers = [10, 20, 30];
+        const newNumbers = [5, ...numbers, 40];
+        console.log(newNumbers);
+
+
+        console.log("---------------------------------------");
+
+        const user = {
+            name: "Aman",
+            age: 17,
+            city: "Patna"
+        };
+        const newUser = {
+            ...user,
+            age: 18
+        };
+
+        console.log(newUser);
+
+        console.log("---------------------------------------");
+        const numbers1 = [10, 20, 30, 40, 50];
+
+        const [first, ...rest] = numbers1;
+        console.log(first);
+        console.log(rest);
+
+        console.log("---------------------------------------");
+        const fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+        const [firstFruit, secondFruit, ...remainingFruits] = fruits;
+        console.log(firstFruit);
+        console.log(secondFruit);
+        console.log(remainingFruits);
+
+        console.log("---------------------------------------");
+
+        const student = {
+            name: "Rahul",
+            age: 17,
+            stream: "Arts",
+            city: "Patna"
+        };
+
+        const { name, ...restDetails } = student;
+        console.log(name);
+        console.log(restDetails);
+
+        console.log("---------------------------------------");
+        const { age, ...otherDetails } = student;
+        console.log(name);
+        console.log(age);
+        console.log(otherDetails);
+
+        console.log("---------------------------------------");
+
+        function showNumbers(...numbers) {
+            console.log(numbers);
+        }
+
+        showNumbers(10, 20, 30, 40);
+
+        console.log("---------------------------------------");
+
+        function showInfo(name, ...details) {
+            console.log(name);
+            console.log(details);
+        }
+
+        showInfo("Aman", 17, "Patna", "Arts");
+
+        console.log("---------------------------------------");
+
+        function sum(...numberss) {
+            let total = 0;
+            for (let i = 0; i < numberss.length; i++) {
+                const element = numberss[i];
+                total = total + element;
+            }
+            console.log(total);
+        }
+
+        sum(10, 20, 30, 40);
+
+
+
+
+    </script>
+</body>
+
+</html>
