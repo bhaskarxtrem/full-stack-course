@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json in JavaScript</title>
+</head>
+
+<body>
+    <script>
+        const phone = {
+            brand: "Samsung",
+            model: "S25",
+            price: 80000
+        };
+
+        const jsonphone = JSON.stringify(phone);
+        console.log(jsonphone);
+        console.log(typeof jsonphone);
+
+        console.log("---------------------------------------");
+        const jsonPhone = '{"brand":"Samsung","model":"S25","price":80000}';
+        const phone1 = JSON.parse(jsonPhone);
+        console.log(phone1);
+        console.log(phone1.brand)
+        console.log(phone1.price)
+        console.log(typeof phone1);
+    </script>
+</body>
+
+</html>
