@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+</head>
+
+<body>
+    <script>
+        let students = [];
+
+        function addStudent(name, age, marks) {
+            const student = {
+                name: name,
+                age: age,
+                marks: marks
+            }
+            students.push(student);
+        }
+
+        addStudent("Rahul", 17, 85);
+        addStudent("Aman", 18, 91);
+
+
+        console.log(...students);
+
+        console.log("---------------------------------------");
+        function displayStudents() {
+            students.forEach(function (student) {
+                console.log(student.name + " - " + student.marks);
+            })
+        }
+        displayStudents();
+
+
+        console.log("---------------------------------------");
+        function searchStudent(name) {
+            const student = students.find(function (student) {
+                return student.name === name;
+            });
+
+            console.log(student);
+        }
+        searchStudent("Aman");
+
+        console.log("---------------------------------------");
+
+
+
+        function updateStudent(name, newMarks) {
+            const student = students.find(function (student) {
+                return student.name === name;
+            });
+
+            student.marks = newMarks;
+        }
+
+        updateStudent("Aman", 99);
+
+        displayStudents();
+        console.log(students[1].marks);
+
+        console.log("---------------------------------------");
+
+        function deleteStudent(name) {
+            const banana = students.filter(function (student) {
+                return student.name !== name;
+            });
+            students = banana;
+        }
+        console.log("---------------------------------------");
+        deleteStudent("Rahul");
+        displayStudents();
+
+        console.log("---------------------------------------");
+        function saveAsJSON() {
+            students = JSON.stringify(students);
+            console.log(students);
+        }
+
+        saveAsJSON();
+
+        function LoadFromJSON() {
+            students = JSON.parse(students);
+            console.log(students);
+        }
+
+        LoadFromJSON();
+
+    </script>
+</body>
+
+</html>
