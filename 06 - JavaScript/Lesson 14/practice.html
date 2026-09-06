@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Practice</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1 id="title">My Website</h1>
+
+        <p class="description">Learning JavaScript DOM</p>
+
+        <p class="description">DOM is interesting</p>
+
+        <button class="btn">Button 1</button>
+        <button class="btn">Button 2</button>
+
+    </div>
+
+    <script>
+        let title = document.getElementById("title")
+        console.log(title.textContent)
+        let firstDescription = document.querySelector(".description")
+        console.log(firstDescription.textContent)
+        console.log("-------------------------------")
+        let descriptions = document.querySelectorAll(".description")
+        descriptions.forEach((description) => {
+            console.log(description.textContent)
+        })
+        console.log("-------------------------------")
+        let buttons = document.querySelectorAll(".btn")
+        buttons.forEach((button) => {
+            console.log(button.textContent)
+        })
+        console.log("-------------------------------")
+        title.parentElement
+        title.children
+        title.nextElementSibling
+        console.log("-------------------------------")
+        // final challenge
+
+        let container = document.getElementById("container")
+        console.log(container.children.length)
+
+        console.log(title.parentElement)
+        console.log(title.nextElementSibling)
+    </script>
+
+</body>
+
+</html>
