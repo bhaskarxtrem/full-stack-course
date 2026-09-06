@@ -35,7 +35,7 @@
         displayStudents();
 
 
-        console.log("---------------------------------------");
+        
         function searchStudent(name) {
             const student = students.find(function (student) {
                 return student.name === name;
@@ -44,10 +44,6 @@
             console.log(student);
         }
         searchStudent("Aman");
-
-        console.log("---------------------------------------");
-
-
 
         function updateStudent(name, newMarks) {
             const student = students.find(function (student) {

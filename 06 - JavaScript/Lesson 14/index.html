@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="greet">Hello, World!</h1>
+    <p class="description">I am learning DOM manipulation.</p>
+    <button>Click here</button>
+    <a href="https://www.google.com">Go to Google</a>
+    <script>
+        const greeting = document.querySelector("#greet")
+        const description = document.querySelector(".description")
+        const button = document.querySelector("button")
+        const link = document.querySelector("a")
+        console.log(greeting.textContent)
+        console.log(description.textContent)
+        console.log(button.textContent  ) 
+        console.log(link.getAttribute("href"))
+
+        greeting.textContent = "Hello, Xtrem!"
+        description.textContent = "I am learning DOM manipulation and I am enjoying it."
+        button.textContent = "Click me!"
+        link.textContent = "Go to YouTube"
+        link.setAttribute("href", "https://www.youtube.com")
+        greeting.style.color = "blue"
+    </script>
+</body>
+
+</html>
