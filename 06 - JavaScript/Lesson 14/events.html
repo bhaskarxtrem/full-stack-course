@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <input id="name" placeholder="Enter your password" type="password">
+    <script>
+        const container = document.createElement("div");
+        container.classList.add("container");
+        const button = document.createElement("button");
+        const paragraph = document.createElement("p");
+        paragraph.textContent = "Button clicked!";
+        button.textContent = "Click Me";
+
+        container.appendChild(button);
+        document.body.appendChild(container);
+
+        button.addEventListener("click", function () {
+            container.appendChild(paragraph);
+        });
+
+        button.addEventListener("mouseenter", function (event) {
+            console.log("Button was hovered!");
+            console.log(event.target);
+            console.log(event.type);
+        });
+
+        const nameInput = document.getElementById("name");
+
+        nameInput.addEventListener("input", (event) => {
+            console.log(event.target.value);
+            });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                console.log("Enter key was pressed!");
+            }
+        });
+    </script>
+</body>
+
+</html>
