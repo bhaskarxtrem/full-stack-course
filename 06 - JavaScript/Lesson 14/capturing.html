@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturing</title>
+</head>
+
+<body>
+    <div id="box">
+        <button id="btn">Click me</button>
+    </div>
+
+    <script>
+        const box = document.getElementById("box");
+        const button = document.getElementById("btn");
+
+
+        document.addEventListener("click", (event) => {
+            console.log("Document");
+        });
+
+        box.addEventListener("click", (event) => {
+            console.log("Box");
+        }, true); // Use capturing phase
+
+        button.addEventListener("click", (event) => {
+            console.log("Button");
+        });
+    </script>
+</body>
+
+</html>

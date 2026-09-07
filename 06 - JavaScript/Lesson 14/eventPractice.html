@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Practice</title>
+</head>
+
+<body>
+    <h1 id="title">Hello</h1>
+
+    <input id="name" placeholder="Type something">
+    <button id="btn">Change Title</button>
+
+
+    <script>
+        const heading = document.getElementById("title");
+        const button = document.getElementById("btn");
+        const nameInput = document.getElementById("name");
+
+        button.addEventListener("click", (event) => {
+            heading.textContent = "Button Clicked!";
+            console.log(event.type);
+            console.log(event.target);
+        });
+
+        nameInput.addEventListener("input", (event) => {
+            console.log(event.target.value  )
+        })
+
+
+    </script>
+</body>
+
+</html>

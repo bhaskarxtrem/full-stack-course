@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling</title>
+</head>
+
+<body>
+    <div id="box">
+        <button id="btn">Click me</button>
+    </div>
+
+    <script>
+        const box = document.getElementById("box");
+        const button = document.getElementById("btn");
+
+        box.addEventListener("click", (event) => {
+            console.log("Box");
+        });
+
+        button.addEventListener("click", (event) => {
+            event.stopPropagation(); // Stop the event from bubbling up
+            console.log("Button");
+        });
+
+
+    </script>
+</body>
+
+</html>

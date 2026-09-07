@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegation</title>
+</head>
+
+<body>
+    <ul id="list">
+        <li>Apple <button>Delete</button></li>
+        <li>Banana <button>Delete</button></li>
+        <li>Mango <button>Delete</button></li>
+    </ul>
+
+    <script>
+        const list = document.getElementById("list");
+
+        list.addEventListener("click", (event) => {
+            if (event.target.tagName === "BUTTON") {
+                event.target.parentElement.remove();
+            }
+        })
+    </script>
+</body>
+
+</html>
