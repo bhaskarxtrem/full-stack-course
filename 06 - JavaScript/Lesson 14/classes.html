@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with classes/CSS via JS</title>
+</head>
+
+<body>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background: lightblue;
+        }
+
+        .active {
+            background: black;
+            color: white;
+        }
+    </style>
+
+    <div id="box" class="box">
+        Hello World
+    </div>
+    <br>
+    <button id="btn">Toggle</button>
+
+    <script>
+        const box = document.getElementById("box");
+        const button = document.getElementById("btn");
+        
+        // button.addEventListener("click", () => {
+        //     box.classList.toggle("active");
+        // })
+
+        box.classList.add("active")
+        console.log(box.classList.contains("active"))
+        box.classList.remove("active")
+        console.log(box.classList.contains("active"))
+    </script>
+</body>
+
+</html>
