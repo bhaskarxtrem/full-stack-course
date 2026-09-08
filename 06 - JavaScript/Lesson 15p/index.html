@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <h1 class="header-title">Todo App</h1>
+    <button id="theme-toggle" class="theme-btn">Light Mode</button>
+  </header>
+
+  <!-- ============ MAIN CONTAINER ============ -->
+  <main class="container">
+
+    <!-- ---- Add Task Form ---- -->
+    <form id="todo-form" class="todo-form">
+      <input
+        type="text"
+        id="todo-input"
+        class="todo-input"
+        placeholder="What needs to be done?"
+        autocomplete="off"
+      >
+      <button type="submit" class="add-btn">Add</button>
+    </form>
+
+    <!-- ---- Filter Buttons ---- -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+
+    <!-- ---- Task List ---- -->
+    <ul id="todo-list" class="todo-list">
+
+      <!-- Example Task 1 — Active -->
+      <li class="todo-item">
+        <input type="checkbox" class="todo-checkbox">
+        <span class="todo-text">Learn HTML and CSS basics</span>
+        <button class="delete-btn">X</button>
+      </li>
+
+      <!-- Example Task 2 — Active -->
+      <li class="todo-item">
+        <input type="checkbox" class="todo-checkbox">
+        <span class="todo-text">Build a Todo App UI</span>
+        <button class="delete-btn">X</button>
+      </li>
+
+      <!-- Example Task 3 — Completed -->
+      <li class="todo-item completed">
+        <input type="checkbox" class="todo-checkbox" checked>
+        <span class="todo-text">Set up project files</span>
+        <button class="delete-btn">X</button>
+      </li>
+
+      <!-- Example Task 4 — Active -->
+      <li class="todo-item">
+        <input type="checkbox" class="todo-checkbox">
+        <span class="todo-text">Write JavaScript functionality</span>
+        <button class="delete-btn">X</button>
+      </li>
+
+    </ul>
+
+    <!-- ---- Empty State (hidden when tasks exist) ---- -->
+    <div id="empty-state" class="empty-state hidden">
+      <p class="empty-icon">📝</p>
+      <p class="empty-text">No tasks yet. Add one above!</p>
+    </div>
+
+    <!-- ---- Footer: Counter + Clear ---- -->
+    <div class="todo-footer">
+      <span id="task-counter" class="task-counter">3 tasks remaining</span>
+      <button id="clear-completed" class="clear-btn">Clear Completed</button>
+    </div>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="page-footer">
+    <p>Built with HTML, CSS &amp; JS — Lesson 15 Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
