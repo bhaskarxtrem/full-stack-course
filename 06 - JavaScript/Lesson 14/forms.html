@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <input id="username" type="text" placeholder="Username">
+        <p id="usernameError"></p>
+
+        <input id="password" type="password" placeholder="Password">
+        <p id="passwordError"></p>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        const form = document.getElementById("myForm")
+        const username = document.getElementById("username")
+        const password = document.getElementById("password")
+        const error = document.getElementById("usernameError")
+        const error2 = document.getElementById("passwordError")
+
+        username.addEventListener("input", (event) => {
+            event.preventDefault()
+            if (username.value.trim() === "") {
+                error.textContent = "username is required!";
+                error.style.color = 'red';
+
+
+            }
+
+            else if (username.value.length < 3) {
+                error.textContent = "username should contain atleast 3 characters!";
+                error.style.color = 'red'
+
+            }
+            else {
+                error.textContent = "";
+            }
+        })
+
+        password.addEventListener("input", (event) => {
+            event.preventDefault()
+
+            if (password.value.trim() === "") {
+                error2.textContent = "password is required!";
+                error2.style.color = 'red';
+            }
+
+            else if (password.value.length < 8) {
+                error2.textContent = "password should contain atleast 8 characters!";
+                error2.style.color = 'red'
+
+            }
+            else {
+                error2.textContent = "";
+            }
+        })
+
+    </script>
+</body>
+
+</html>
