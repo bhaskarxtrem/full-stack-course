@@ -23,57 +23,72 @@ body {
    Add class "dark" to <body>
    =========================== */
 body.dark {
+  background-color: #1a1a2e;
   background-color: #121212;
   color: #e0e0e0;
 }
 
 body.dark .header {
+  background-color: #16213e;
   background-color: #1e1e1e;
 }
 
 body.dark .theme-btn {
   background-color: #e0e0e0;
+  color: #1a1a2e;
   color: #1e1e1e;
 }
 
 body.dark .todo-form {
+  background-color: #16213e;
   background-color: #1e1e1e;
 }
 
 body.dark .todo-input {
+  background-color: #0f3460;
+  border-color: #0f3460;
   background-color: #2a2a2a;
   border-color: #333;
   color: #e0e0e0;
 }
 
 body.dark .todo-input::placeholder {
+  color: #8899aa;
   color: #777;
 }
 
 body.dark .todo-input:focus {
+  border-color: #e94560;
   border-color: #4361ee;
 }
 
 body.dark .filter-btn {
+  background-color: #16213e;
+  color: #8899aa;
   background-color: #2a2a2a;
   color: #999;
 }
 
 body.dark .filter-btn.active {
+  background-color: #e94560;
   background-color: #4361ee;
   color: #fff;
 }
 
 body.dark .todo-item {
+  background-color: #16213e;
+  border-color: #0f3460;
   background-color: #1e1e1e;
   border-color: #2a2a2a;
 }
 
 body.dark .todo-item:hover {
+  border-color: #e94560;
   border-color: #4361ee;
 }
 
 body.dark .delete-btn {
+  color: #8899aa;
   color: #666;
 }
 
@@ -83,6 +98,7 @@ body.dark .delete-btn:hover {
 }
 
 body.dark .todo-footer {
+  border-color: #0f3460;
   border-color: #2a2a2a;
 }
 
