@@ -1,0 +1,151 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== Card Container ===== */
+.container {
+  background-color: #1e1e2e;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Heading ===== */
+h1 {
+  text-align: center;
+  font-size: 26px;
+  color: #e0e0e0;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+/* ===== Form Group ===== */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  outline: none;
+  background-color: #2a2a3c;
+  color: #f0f0f0;
+  transition: border-color 0.3s;
+}
+
+input::placeholder {
+  color: #666;
+}
+
+input:focus {
+  border-color: #4361ee;
+}
+
+/* Fix browser autofill overriding dark theme colors */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f0f0f0;
+  -webkit-box-shadow: 0 0 0 1000px #2a2a3c inset;
+  border: 2px solid #333;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ===== Validation Message ===== */
+
+/* 
+  The .validation-message is empty by default.
+  In your JavaScript, add the class "error" or "success"
+  to show feedback text below each input.
+*/
+
+.validation-message {
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
+  min-height: 18px; /* reserves space so the layout doesn't jump */
+}
+
+/* Error state — add class "error" via JS */
+.validation-message.error {
+  color: #ff6b6b;
+}
+
+/* Success state — add class "success" via JS */
+.validation-message.success {
+  color: #2dd4a8;
+}
+
+/* Optional: change input border on error / success */
+input.error {
+  border-color: #ff6b6b;
+}
+
+input.success {
+  border-color: #2dd4a8;
+}
+
+/* ===== Submit Button ===== */
+.btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #4361ee;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #3a56d4;
+}
+
+.btn:active {
+  background-color: #2f4ac0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .container {
+    padding: 28px 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
